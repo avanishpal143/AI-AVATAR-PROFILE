@@ -1,51 +1,81 @@
 # AI Avatar Dashboard
 
-This project is an implementation of an AI Avatar Dashboard UI for an internship assignment.
+A modern, responsive dashboard for managing AI-generated avatars. Built with React, TypeScript, Vite, and Tailwind CSS.
+
+[Live Demo](https://keen-frangollo-4ef0f7.netlify.app/)  
+[GitHub Repository](https://github.com/avanishpal143/AI-AVATAR-PROFILE)
 
 ## Features
 
-- Welcome header with personalized user greeting
-- Card-based avatar gallery with 3 avatars (name, preview image, edit functionality)
+- Personalized welcome header with user greeting
+- Card-based avatar gallery (view, edit, delete avatars)
 - Floating "Create New Avatar" button with modal dialog
 - Mobile-responsive design
-- Data fetching from DummyJSON API
+- Data fetching from [DummyJSON API](https://dummyjson.com/)
+- Smooth modal and form interactions
+- Clean, modern UI with Tailwind CSS
+
+## Screenshots
+
+![AI Avatar Dashboard Screenshot](https://user-images.githubusercontent.com/your-screenshot.png) <!-- Replace with actual screenshot if available -->
 
 ## Technology Stack
 
-- React
-- TypeScript
-- Vite
-- Tailwind CSS
-- Lucide React for icons
-
-## Assignment Questions
-
-### Part 2: Short Questions
-
-1. **If this was a real SaaS tool, what 2 features would you prioritize next and why?**
-
-   I would prioritize:
-   
-   - AI-powered avatar generation: This would allow users to create custom avatars with text prompts, bringing true value to the "AI" part of the dashboard and giving users a compelling reason to use the service.
-   
-   - Avatar style customization options: Providing tools to customize avatar characteristics (hair, clothing, accessories) would make the platform more engaging and personalized, increasing user retention.
-
-2. **What was one challenge you faced in this task, and how did you solve or approach it?**
-
-   One challenge was creating a responsive layout that works well across device sizes while maintaining visual appeal. I approached this by using Tailwind's responsive utility classes and tested extensively across different viewport sizes. I used grid layouts with dynamic column counts based on screen width to ensure the cards display optimally on any device.
-
-### Part 3: Video Answer Question
-
-"What's one fun or ambitious feature you'd build into this platform if you had full freedom?"
-
-[The candidate would record a 30-60 second video answering this question.]
+- [React](https://react.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Vite](https://vitejs.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Lucide React](https://lucide.dev/)
 
 ## Getting Started
 
-```bash
-# Install dependencies
-npm install
+Clone the repository:
 
-# Start development server
+```sh
+git clone https://github.com/avanishpal143/AI-AVATAR-PROFILE.git
+cd AI-AVATAR-PROFILE
+```
+
+Install dependencies:
+
+```sh
+npm install
+```
+
+Start the development server:
+
+```sh
 npm run dev
 ```
+
+Open [http://localhost:5173](http://localhost:5173) to view the app in your browser.
+
+## Project Structure
+
+```
+src/
+  components/      # Reusable UI components
+  hooks/           # Custom React hooks for data fetching and state
+  services/        # API service functions
+  types/           # TypeScript type definitions
+  App.tsx          # Main application component
+  main.tsx         # Entry point
+  index.css        # Tailwind CSS imports
+```
+
+## API
+
+This project uses the [DummyJSON API](https://dummyjson.com/) for user and avatar data. API requests are proxied via Vite's dev server for local development.
+
+## Customization
+
+- To change the number of avatars fetched, edit the `limit` parameter in [`fetchAvatars`](src/services/api.ts).
+- To adjust the UI, modify components in [`src/components/`](src/components/).
+
+## License
+
+This project is for educational and demonstration purposes.
+
+---
+
+Made with ❤️ by [Avanish Pal](https://github.com/avanishpal143)
